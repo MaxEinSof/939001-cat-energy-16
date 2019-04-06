@@ -25,27 +25,122 @@
       </nav>
     </header>
 
+    <main class="page-main">
+      <h1 class="page-main__title page-main__title--inner-page">Подбор программы</h1>
+
+      <form class="page-main__program-form program-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+        <fieldset class="program-form__cat-info">
+          <legend class="visually-hidden">Информация о питомце</legend>
+          <ul class="program-form__info-list">
+            <li class="program-form__info-item">
+              <label class="program-form__label" for="cat-name-field">Имя:*</label>
+              <input class="program-form__input" type="text" name="cat-name" id="cat-name-field" placeholder="Барсик">
+            </li>
+            <li class="program-form__info-item">
+              <label class="program-form__label" for="cat-weight-field">Вес (кг):*</label>
+              <input class="program-form__input" type="number" min="1" name="cat-weight" id="cat-weight-field" placeholder="7">
+            </li>
+            <li class="program-form__info-item">
+              <label class="program-form__label" for="cat-age-field">Возраст (лет):</label>
+              <input class="program-form__input" type="number" min="1" name="cat-age" id="cat-age-field" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="program-form__goal">
+          <legend class="visually-hidden">Цель</legend>
+          <ul class="program-form__goal-list">
+            <li class="program-form__goal-item">
+              <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-slimming" value="slimming" checked>
+              <label class="program-form__label" for="goal-slimming">Похудение</label>
+            </li>
+            <li class="program-form__goal-item">
+              <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-weight-gain" value="weight-gain">
+              <label class="program-form__label" for="goal-weight-gain">Набор массы</label>
+            </li>
+            <li class="program-form__goal-item">
+              <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-advice" value="advice">
+              <label class="program-form__label" for="goal-advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="program-form__contact-info">
+          <legend class="program-form__legend">Контактные данные (владельца кота)</legend>
+          <label class="program-form__label" for="email-field">E-mail:*</label>
+          <input class="program-form__input" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+          <label class="program-form__label" for="tel-field">Телефон:*</label>
+          <input class="program-form__input" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
+        </fieldset>
+
+        <fieldset class="program-form__comment">
+          <legend class="program-form__legend">Комментарий</legend>
+          <label class="visually-hidden" for="comment-field">Поле ввода о повадках кота</label>
+          <textarea class="program-form__input" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="program-form__additionally">
+          <legend class="program-form__legend">Дополнительно</legend>
+          <ul class="program-form__additional-list">
+            <li class="program-form__additional-item">
+              <input class="visually-hidden program-form__input" type="checkbox" name="sweetener" id="sweetener-field" checked>
+              <label class="program-form__label" for="sweetener-field">Сахарозаменитель</label>
+            </li>
+            <li class="program-form__additional-item">
+              <input class="visually-hidden program-form__input" type="checkbox" name="water" id="water-field">
+              <label class="program-form__label" for="water-field">Питьевая вода</label>
+            </li>
+            <li class="program-form__additional-item">
+              <input class="visually-hidden program-form__input" type="checkbox" name="milk" id="milk-field">
+              <label class="program-form__label" for="milk-field">Молоко</label>
+            </li>
+            <li class="program-form__additional-item">
+              <input class="visually-hidden program-form__input" type="checkbox" name="vitamins" id="vitamins-field">
+              <label class="program-form__label" for="vitamins-field">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="program-form__button button" type="submit">Отправить заявку</button>
+
+        <small class="program-form__footnote">
+          <sup>*</sup> — Обязательные поля
+        </small>
+      </form>
+    </main>
+
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип магазина «Кэт энерджи»">
-      </a>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--vkontakte" href="#">Мы в Вконтакте</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--instagram" href="#">Мы в Инстаграме</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="contacts__invite">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <img class="contacts__map" src="img/map.jpg" width="320" height="362" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
+      </section>
+      <section class="page-footer__links">
+        <h2 class="visually-hidden">Ссылки</h2>
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип магазина «Кэт энерджи»">
         </a>
-      </div>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </section>
     </footer>
 
   </body>
