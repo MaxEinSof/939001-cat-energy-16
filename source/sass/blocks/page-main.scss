@@ -1,0 +1,35 @@
+.page-main__header {
+  position: relative;
+  min-height: 480px;
+  margin-bottom: 22px;
+  padding-top: 29px;
+  color: #ffffff;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 305px;
+    background-color: #64a83b;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-main__slogan {
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
