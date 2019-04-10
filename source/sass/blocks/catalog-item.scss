@@ -3,14 +3,15 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #111111;
+  text-transform: uppercase;
+  color: $black-color;
 }
 
 .catalog-item__parameters {
-  font-family: "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $dark-grey-color;
 }
 
 .catalog-item__parameter-name {

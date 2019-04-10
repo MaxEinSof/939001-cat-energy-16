@@ -10,8 +10,8 @@
 
 .advantages__list {
   @include list;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+  font-family: $secondary-font;
+  color: $dark-grey-color;
 }
 
 .advantages__item {
