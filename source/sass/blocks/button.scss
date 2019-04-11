@@ -1,0 +1,17 @@
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $green-color;
+
+  &--index-page {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--show-all {
+    color: $dark-grey-color;
+    background-color: $white-grey-color;
+  }
+}

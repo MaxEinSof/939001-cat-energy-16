@@ -1,0 +1,19 @@
+.catalog-item__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.catalog-item__parameters {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey-color;
+}
+
+.catalog-item__parameter-name {
+  font-weight: 400;
+}
