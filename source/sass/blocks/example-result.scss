@@ -1,0 +1,45 @@
+.example-result {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  background-color: $white-grey-color;
+}
+
+.example-result__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example-result__description {
+  margin: 0;
+  font-family: $secondary-font;
+  color: $dark-grey-color;
+}
+
+.example-result__parameter-value {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example-result__parameter-name {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $dark-grey-color;
+}
+
+.example-result__expenses {
+  margin: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example-result__button-before,
+.example-result__button-after {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+}
