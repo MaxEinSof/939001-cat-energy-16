@@ -1,0 +1,21 @@
+.contacts {
+  padding-top: 30px;
+
+  &--inner-page {
+    background-color: $white-grey-color;
+  }
+}
+
+.contacts__invite {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $secondary-font;
+  line-height: 20px;
+  font-style: normal;
+  color: $dark-grey-color;
+}
