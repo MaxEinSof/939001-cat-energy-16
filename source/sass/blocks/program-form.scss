@@ -1,0 +1,68 @@
+.program-form__text {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.program-form__cat-info {
+  @include fieldset;
+  margin-bottom: 23px;
+}
+
+.program-form__info-list {
+  @include list;
+}
+
+.program-form__goal {
+  @include fieldset;
+  margin-bottom: 30px;
+  border: 1px solid $extra-light-grey-color;
+}
+
+.program-form__goal-list {
+  @include list;
+}
+
+.program-form__contact-info {
+  @include fieldset;
+  margin-bottom: 30px;
+}
+
+.program-form__comment {
+  @include fieldset;
+  margin-bottom: 30px;
+}
+
+.program-form__additionally {
+  @include fieldset;
+  margin-bottom: 34px;
+}
+
+.program-form__additional-list {
+  @include list;
+}
+
+.program-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $light-black-color;
+}
+
+.program-form__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey-color;
+}
+
+.program-form__legend {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black-color;
+}
+
+.program-form__footnote {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark-grey-color;
+}
