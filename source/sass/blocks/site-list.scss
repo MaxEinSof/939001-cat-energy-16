@@ -9,3 +9,9 @@
 .site-list__link {
   color: $black-color;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+}
