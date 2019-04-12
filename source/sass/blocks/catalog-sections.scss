@@ -1,7 +1,37 @@
 .catalog-sections {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .catalog-sections__section-preview {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-sections {
+    width: 768px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .catalog-sections__section-preview {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-sections {
+    justify-content: space-between;
+    width: 1300px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
