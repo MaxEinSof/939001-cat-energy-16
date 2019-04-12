@@ -20,12 +20,8 @@
 }
 
 .page-main__container {
+  @include mobile-container;
   position: relative;
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .page-main__title {
@@ -66,9 +62,8 @@
   }
 
   .page-main__container {
-    width: 768px;
+    @include tablet-container;
     min-height: 806px;
-    padding-right: 30px;
     padding-left: 120px;
   }
 
@@ -101,10 +96,10 @@
   }
 
   .page-main__container {
-    width: 1300px;
+    @include desktop-container;
     min-height: 554px;
     padding-top: 84px;
-    padding-right: 40px;
+    padding-left: 120px;
   }
 
   .page-main__promo-image {
