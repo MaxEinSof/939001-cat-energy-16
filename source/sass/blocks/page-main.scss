@@ -50,6 +50,10 @@
   margin-bottom: 30px;
 }
 
+.page-main__inner-container {
+  @include mobile-container;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__header {
     padding-top: 0;
@@ -79,6 +83,10 @@
     display: inline-block;
     vertical-align: top;
   }
+
+  .page-main__inner-container {
+    @include tablet-container;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -106,5 +114,9 @@
     top: 0;
     left: 490px;
     transform: translateX(0);
+  }
+
+  .page-main__inner-container {
+    @include desktop-container;
   }
 }

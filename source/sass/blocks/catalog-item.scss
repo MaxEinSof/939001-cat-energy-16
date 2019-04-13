@@ -1,3 +1,7 @@
+.catalog-item__inner-container {
+  @include mobile-container;
+}
+
 .catalog-item__title {
   margin: 0;
   font-size: 16px;
@@ -16,4 +20,27 @@
 
 .catalog-item__parameter-name {
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    box-sizing: border-box;
+    width: 324px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 38px;
+    background-color: $white-grey-color;
+  }
+
+  .catalog-item__inner-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 245px;
+  }
 }
