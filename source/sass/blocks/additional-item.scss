@@ -1,3 +1,15 @@
+.additional-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
+
+.additional-item__link {
+  width: 100%;
+}
+
 .additional-item__title {
   margin: 0;
   font-size: 16px;
@@ -13,4 +25,49 @@
   font-family: $secondary-font;
   line-height: 14px;
   color: $dark-grey-color;
+}
+
+.additional-item__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item {
+    padding-top: 25px;
+    padding-right: 36px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+  }
+
+  .additional-item__link {
+    width: auto;
+    margin-right: auto;
+  }
+
+  .additional-item__price {
+    width: 95px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item {
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-left: 0;
+  }
+
+  .additional-item__portion-volume {
+    width: 245px;
+  }
+
+  .additional-item__price {
+    width: 80px;
+    text-align: left;
+  }
+
+  .additional-item__button {
+    width: 245px;
+  }
 }
