@@ -1,7 +1,29 @@
 .catalog-sections {
+  @include mobile-container;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
 .catalog-sections__section-preview {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-sections {
+    @include tablet-container;
+    margin-bottom: 20px;
+  }
+
+  .catalog-sections__section-preview {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-sections {
+    @include desktop-container;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
 }

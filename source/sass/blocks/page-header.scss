@@ -1,5 +1,27 @@
 .page-header {
+  @include mobile-container;
   padding-top: 11px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   border-bottom: 1px solid $light-grey-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include tablet-container;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-top: 24px;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-container;
+    margin-bottom: 30px;
+    padding-top: 54px;
+    padding-bottom: 0;
+  }
 }

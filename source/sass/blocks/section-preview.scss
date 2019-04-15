@@ -1,4 +1,6 @@
 .section-preview {
+  box-sizing: border-box;
+  width: 100%;
   padding: 20px;
   background-color: $white-grey-color;
 }
@@ -22,4 +24,16 @@
   line-height: 16px;
   color: $black-color;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .section-preview {
+    padding: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-preview {
+    width: 570px;
+  }
 }

@@ -1,3 +1,4 @@
 .social-list {
   @include list;
+  display: flex;
 }

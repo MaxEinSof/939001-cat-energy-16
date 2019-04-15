@@ -3,3 +3,32 @@
   padding-bottom: 22px;
   background-color: $white-grey-color;
 }
+
+.page-footer__container {
+  @include mobile-container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__links {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__container {
+    @include tablet-container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__links {
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+
+  .page-footer__container {
+    @include desktop-container;
+  }
+}
