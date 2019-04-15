@@ -1,10 +1,24 @@
 .program-form__text {
-  margin: 0;
+  @include mobile-container;
+  margin-bottom: 35px;
   text-transform: uppercase;
+}
+
+.program-form__outer-container {
+  margin-bottom: 30px;
+}
+
+.program-form__inner-container {
+  @include mobile-container;
+}
+
+.program-form__container {
+  @include mobile-container;
 }
 
 .program-form__cat-info {
   @include fieldset;
+  @include mobile-container;
   margin-bottom: 23px;
 }
 
@@ -14,7 +28,9 @@
 
 .program-form__goal {
   @include fieldset;
-  margin-bottom: 30px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px solid $extra-light-grey-color;
 }
 
@@ -41,6 +57,10 @@
   @include list;
 }
 
+.program-form__info-item {
+  display: flex;
+}
+
 .program-form__label {
   font-size: 16px;
   text-transform: uppercase;
@@ -48,21 +68,195 @@
 }
 
 .program-form__input {
+  flex-grow: 1;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $dark-grey-color;
 }
 
+.program-form__input--textarea {
+  width: 100%;
+}
+
+.program-form__contact-info,
+.program-form__comment,
+.program-form__additionally {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    background-color: $green-color;
+  }
+}
+
+.program-form__legend-container {
+  @include mobile-container;
+  padding-left: 0;
+}
+
 .program-form__legend {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
   color: $black-color;
+  background-color: $white-color;
+}
+
+.program-form__legend--contact {
+  width: 224px;
+}
+
+.program-form__contact-detail {
+  display: flex;
+  margin: 0;
+}
+
+.program-form__button {
+  width: 100%;
 }
 
 .program-form__footnote {
+  display: block;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
   color: $dark-grey-color;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .program-form__outer-container {
+    @include tablet-container;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
+  .program-form__cat-info {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .program-form__inner-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .program-form__text {
+    @include tablet-container;
+    padding-left: 71px;
+    padding-right: 354px;
+  }
+
+  .program-form__goal {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .program-form__container {
+    @include tablet-container;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
+  .program-form__legend-container {
+    @include tablet-container;
+    padding-right: 67px;
+  }
+
+  .program-form__legend {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .program-form__legend--contact {
+    width: auto;
+  }
+
+  .program-form__additional-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .program-form__additional-item {
+    width: 287px;
+  }
+
+  .program-form__button {
+    width: 283px;
+    margin-right: 60px;
+  }
+
+  .program-form__footnote {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__outer-container {
+    @include desktop-container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__cat-info {
+    width: 570px;
+  }
+
+  .program-form__goal {
+    width: 570px;
+  }
+
+  .program-form__text {
+    @include desktop-container;
+    padding-right: 935px;
+  }
+
+  .program-form__container {
+    @include desktop-container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__legend-container {
+    @include desktop-container;
+    padding-left: 0;
+  }
+
+  .program-form__contact-detail {
+    width: 570px;
+  }
+
+  .program-form__additional-list {
+    width: 100%;
+  }
+
+  .program-form__additional-item {
+    width: 245px;
+  }
+
+  .program-form__button {
+    width: 570px;
+    margin-right: 0;
+  }
+
+  .program-form__footnote {
+    width: 570px;
+    text-align: left;
+  }
 }
