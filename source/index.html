@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -71,28 +72,32 @@
 
       <section class="example-result">
         <h2 class="visually-hidden">Результат от нашего функционального питания</h2>
-        <p class="example-result__title">Живой пример</p>
-        <p class="example-result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table class="example-result__achievement">
-          <tr>
-            <td class="example-result__parameter-value">5 кг</td>
-            <td class="example-result__parameter-value">60 дней</td>
-          </tr>
-          <tr>
-            <th class="example-result__parameter-name">снижение веса</th>
-            <th class="example-result__parameter-name">затрачено времени</th>
-          </tr>
-        </table>
-        <p class="example-result__expenses">Затраты на питание: 15 000 руб.</p>
-        <div class="example-result__comparison-slider">
-          <img class="example-result__cat-image" src="img/cat.png" width="311" height="232" alt="Кот">
-          <div class="example-result__slider-controllers">
-            <button class="example-result__button-before" type="button">Было</button>
-              <div class="example-result__scale">
-                <div class="example-result__bar"></div>
-                <button class="example-result__toggle" type="button">Ползунок сравнения слайдов</button>
-              </div>
-            <button class="example-result__button-after" type="button">Стало</button>
+        <div class="example-result__container">
+          <div class="example-result__description">
+            <p class="example-result__title">Живой пример</p>
+            <p class="example-result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example-result__achievement">
+              <p class="example-result__parameter">
+                <span class="example-result__parameter-value">5 кг</span>
+                <span class="example-result__parameter-name">снижение веса</span>
+              </p>
+              <p class="example-result__parameter">
+                <span class="example-result__parameter-value">60 дней</span>
+                <span class="example-result__parameter-name">затрачено времени</span>
+              </p>
+            </div>
+            <p class="example-result__expenses">Затраты на питание:<span class="example-result__expenses-value"> 15 000 руб.</span></p>
+          </div>
+          <div class="example-result__comparison-slider">
+            <img class="example-result__cat-image" src="img/cat.png" width="311" height="232" alt="Кот">
+            <div class="example-result__slider-controllers">
+              <button class="example-result__button-before" type="button">Было</button>
+                <div class="example-result__scale">
+                  <div class="example-result__bar"></div>
+                  <button class="example-result__toggle" type="button">Ползунок сравнения слайдов</button>
+                </div>
+              <button class="example-result__button-after" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -101,9 +106,13 @@
     <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <b class="contacts__invite">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="contacts__map" src="img/map.jpg" width="320" height="362" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
+        <div class="contacts__container">
+          <div class="contacts__info">
+            <b class="contacts__invite">Приглашаем<br>к сотрудничеству дилеров!</b>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+          </div>
+        </div>
+        <img class="contacts__map" src="http://placehold.it/320x362" width="320" height="362" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
       </section>
       <section class="page-footer__links">
         <div class="page-footer__container">
