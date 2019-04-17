@@ -1,8 +1,9 @@
 .page-main__header {
   position: relative;
-  margin-bottom: 22px;
-  padding-top: 29px;
+  margin-bottom: 23px;
+  padding-top: 27px;
   color: $white-color;
+  text-align: center;
 
   &::before {
     content: "";
@@ -26,6 +27,7 @@
 
 .page-main__title {
   margin: 0;
+  margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -37,6 +39,7 @@
 
 .page-main__slogan {
   display: block;
+  margin-bottom: 29px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -60,6 +63,7 @@
     padding-top: 0;
     margin-bottom: 0;
     color: $black-color;
+    text-align: left;
 
     &::before {
       display: none;
@@ -68,8 +72,21 @@
 
   .page-main__container {
     @include tablet-container;
-    min-height: 806px;
-    padding-left: 120px;
+    min-height: 810px;
+    padding-left: 118px;
+  }
+
+  .page-main__title {
+    width: 450px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__slogan {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .page-main__promo-image {
@@ -95,7 +112,7 @@
     margin-bottom: 80px;
 
     &::before {
-      top: -105px;
+      top: -142px;
       left: 50%;
       display: block;
       width: 50%;
@@ -107,8 +124,12 @@
   .page-main__container {
     @include desktop-container;
     min-height: 554px;
-    padding-top: 84px;
+    padding-top: 80px;
     padding-left: 120px;
+  }
+
+  .page-main__slogan {
+    margin-bottom: 53px;
   }
 
   .page-main__promo-image {

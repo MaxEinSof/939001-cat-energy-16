@@ -7,6 +7,10 @@
   background-color: $green-color;
 
   &--index-page {
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 18px;
   }
@@ -14,5 +18,18 @@
   &--show-all {
     color: $dark-grey-color;
     background-color: $white-grey-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--index-page {
+      padding-top: 15px;
+      padding-right: 29px;
+      padding-bottom: 17px;
+      padding-left: 25px;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

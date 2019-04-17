@@ -17,7 +17,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     padding-top: 24px;
     padding-bottom: 0;
     border: none;
@@ -37,7 +37,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include desktop-container;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     padding-top: 53px;
     padding-bottom: 0;
   }
