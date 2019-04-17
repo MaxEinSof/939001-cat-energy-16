@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .catalog-sections {
     @include tablet-container;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
   }
 
   .catalog-sections__section-preview {
@@ -28,7 +28,7 @@
   .catalog-sections {
     @include desktop-container;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 73px;
   }
 
   .catalog-sections__section-preview {
