@@ -1,8 +1,13 @@
 .page-header {
-  @include mobile-container;
   padding-top: 11px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid $light-grey-color;
+}
+
+.page-header__container {
+  @include mobile-container;
+}
+
+.page-header__main-nav {
+  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,10 +15,22 @@
     @include tablet-container;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0 auto;
     margin-bottom: 60px;
     padding-top: 24px;
     padding-bottom: 0;
     border: none;
+  }
+
+  .page-header__container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-header__main-nav {
+    margin-top: 0;
   }
 }
 
@@ -21,7 +38,7 @@
   .page-header {
     @include desktop-container;
     margin-bottom: 30px;
-    padding-top: 54px;
+    padding-top: 53px;
     padding-bottom: 0;
   }
 }
