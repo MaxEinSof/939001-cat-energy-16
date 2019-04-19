@@ -7,8 +7,17 @@
 .page-footer__container {
   @include mobile-container;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+}
+
+.page-footer__logo {
+  margin-bottom: 30px;
+}
+
+.page-footer__copyright {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +28,16 @@
 
   .page-footer__container {
     @include tablet-container;
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    width: 162px;
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    width: 162px;
   }
 }
 
@@ -30,5 +49,10 @@
 
   .page-footer__container {
     @include desktop-container;
+    align-items: stretch;
+  }
+
+  .page-footer__logo {
+    margin-top: 3px;
   }
 }
