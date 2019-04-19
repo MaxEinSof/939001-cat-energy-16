@@ -1,5 +1,9 @@
 .page-header {
   padding-top: 11px;
+
+  &--inner-page {
+    margin-bottom: 15px;
+  }
 }
 
 .page-header__container {
@@ -40,5 +44,9 @@
     margin-bottom: 27px;
     padding-top: 53px;
     padding-bottom: 0;
+
+    &--inner-page {
+      margin-bottom: 73px;
+    }
   }
 }

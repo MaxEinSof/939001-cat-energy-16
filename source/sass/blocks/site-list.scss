@@ -68,13 +68,13 @@
   .site-list__item {
     margin-right: 34px;
     padding-bottom: 9px;
-
-    &--current {
-      border-bottom: 2px solid $white-color;
-    }
   }
 
-  .site-list__link {
+  .site-list--index-page .site-list__item--current {
+    border-bottom: 2px solid $white-color;
+  }
+
+  .site-list__link--index-page {
     color: $white-color;
   }
 }
