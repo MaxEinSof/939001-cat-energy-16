@@ -33,6 +33,7 @@
   font-weight: 400;
 
   &--inner-page {
+    margin-bottom: 28px;
     line-height: 60px;
   }
 }
@@ -81,6 +82,10 @@
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
+
+    &--inner-page {
+      margin-bottom: 83px;
+    }
   }
 
   .page-main__slogan {
