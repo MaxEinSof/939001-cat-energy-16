@@ -4,7 +4,7 @@
   width: 100%;
   padding: 20px;
   padding-top: 30px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   background-color: $white-grey-color;
 
   &::before {
@@ -44,7 +44,7 @@
 
 .section-preview__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding-left: 71px;
   font-size: 24px;
   line-height: 37px;
@@ -71,7 +71,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 7px;
     right: -35px;
     width: 24px;
     height: 11px;
@@ -81,8 +81,8 @@
 
 @media (min-width: $tablet-width) {
   .section-preview {
-    padding-top: 77px;
-    padding-bottom: 61px;
+    padding-top: 76px;
+    padding-bottom: 60px;
     padding-left: 53px;
 
     &::before {
@@ -124,7 +124,7 @@
   }
 
   .section-preview__title {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     padding-left: 0;
     font-size: 36px;
   }
@@ -176,7 +176,7 @@
   }
 
   .section-preview__title {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     padding-left: 161px;
   }
 

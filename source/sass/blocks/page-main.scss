@@ -1,6 +1,6 @@
 .page-main__header {
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding-top: 27px;
   color: $white-color;
   text-align: center;
@@ -40,7 +40,7 @@
 
 .page-main__slogan {
   display: block;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -131,6 +131,10 @@
     min-height: 554px;
     padding-top: 80px;
     padding-left: 120px;
+  }
+
+  .page-main__title--inner-page {
+    margin-bottom: 84px;
   }
 
   .page-main__slogan {

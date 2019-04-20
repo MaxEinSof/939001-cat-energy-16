@@ -30,7 +30,7 @@
       transform: translateX(-50%);
       width: 30px;
       height: 30px;
-      background: url("../../img/icon-plus-mobile.svg") 0 0 no-repeat;
+      background: url("../img/icon-plus-mobile.svg") 0 0 no-repeat;
       opacity: 0.2;
     }
   }
@@ -47,9 +47,9 @@
   }
 
   .button--show-all::before {
-    top: 53px;
+    top: 54px;
     width: 60px;
     height: 60px;
-    background: url("../../img/icon-plus.svg") 0 0 no-repeat;
+    background: url("../img/icon-plus.svg") 0 0 no-repeat;
   }
 }
