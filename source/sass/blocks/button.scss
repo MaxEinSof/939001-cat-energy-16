@@ -10,7 +10,8 @@
   color: $white-color;
   background-color: $green-color;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $saturated-green-color;
   }
 
