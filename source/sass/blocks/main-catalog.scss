@@ -38,6 +38,32 @@
   color: $dark-grey-color;
 }
 
+.main-catalog__button {
+  display: block;
+  color: $dark-grey-color;
+  background-color: $white-grey-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: url("../img/icon-plus-mobile.svg") 0 0 no-repeat;
+    opacity: 0.2;
+  }
+
+  &:hover, &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($dark-grey-color, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-catalog {
     @include tablet-container;
@@ -85,6 +111,13 @@
     margin-left: auto;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .main-catalog__button::before {
+    top: 54px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon-plus.svg") 0 0 no-repeat;
   }
 }
 

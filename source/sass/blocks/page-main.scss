@@ -48,6 +48,10 @@
 
 .page-main__button {
   display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .page-main__program-form {
@@ -105,6 +109,12 @@
   .page-main__button {
     display: inline-block;
     vertical-align: top;
+    padding-top: 15px;
+    padding-right: 29px;
+    padding-bottom: 17px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .page-main__inner-container {

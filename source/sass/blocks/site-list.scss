@@ -19,6 +19,15 @@
   color: $black-color;
 }
 
+.site-list__link[href]:hover,
+.site-list__link[href]:focus {
+  opacity: 0.6;
+}
+
+.site-list__link[href]:active {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;

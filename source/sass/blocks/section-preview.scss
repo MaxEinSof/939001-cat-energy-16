@@ -77,6 +77,17 @@
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") 0 0 no-repeat;
   }
+
+  &:hover::after,
+  &:focus::after {
+    right: -56px;
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") 0 0 no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
