@@ -1,8 +1,9 @@
 .page-main__header {
   position: relative;
   margin-bottom: 22px;
-  padding-top: 29px;
+  padding-top: 27px;
   color: $white-color;
+  text-align: center;
 
   &::before {
     content: "";
@@ -13,7 +14,7 @@
     width: 100%;
     height: 305px;
     background-color: $dark-green-color;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
@@ -26,17 +27,20 @@
 
 .page-main__title {
   margin: 0;
+  margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 
   &--inner-page {
+    margin-bottom: 28px;
     line-height: 60px;
   }
 }
 
 .page-main__slogan {
   display: block;
+  margin-bottom: 28px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -44,6 +48,10 @@
 
 .page-main__button {
   display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .page-main__program-form {
@@ -60,6 +68,7 @@
     padding-top: 0;
     margin-bottom: 0;
     color: $black-color;
+    text-align: left;
 
     &::before {
       display: none;
@@ -68,8 +77,25 @@
 
   .page-main__container {
     @include tablet-container;
-    min-height: 806px;
-    padding-left: 120px;
+    min-height: 810px;
+    padding-left: 118px;
+  }
+
+  .page-main__title {
+    width: 450px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+
+    &--inner-page {
+      margin-bottom: 83px;
+    }
+  }
+
+  .page-main__slogan {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .page-main__promo-image {
@@ -83,6 +109,12 @@
   .page-main__button {
     display: inline-block;
     vertical-align: top;
+    padding-top: 15px;
+    padding-right: 29px;
+    padding-bottom: 17px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .page-main__inner-container {
@@ -95,20 +127,28 @@
     margin-bottom: 80px;
 
     &::before {
-      top: -105px;
+      top: -142px;
       left: 50%;
       display: block;
       width: 50%;
       height: 696px;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
     }
   }
 
   .page-main__container {
     @include desktop-container;
     min-height: 554px;
-    padding-top: 84px;
+    padding-top: 80px;
     padding-left: 120px;
+  }
+
+  .page-main__title--inner-page {
+    margin-bottom: 84px;
+  }
+
+  .page-main__slogan {
+    margin-bottom: 53px;
   }
 
   .page-main__promo-image {

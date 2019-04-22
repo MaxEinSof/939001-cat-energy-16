@@ -1,8 +1,17 @@
 .catalog-item__inner-container {
   @include mobile-container;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item__description {
+  order: 1;
+  width: 140px;
+  padding-top: 21px;
 }
 
 .catalog-item__title {
+  width: 80px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -12,6 +21,8 @@
 }
 
 .catalog-item__parameters {
+  width: 100%;
+  padding-top: 10px;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
@@ -19,17 +30,39 @@
 }
 
 .catalog-item__parameter-name {
+  padding: 0;
   font-weight: 400;
+}
+
+.catalog-item__parameter-value {
+  padding: 0;
+  text-align: right;
+}
+
+.catalog-item__image {
+  display: block;
+}
+
+.catalog-item__button {
+  order: 2;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     box-sizing: border-box;
     width: 324px;
-    padding-right: 37px;
     padding-bottom: 40px;
-    padding-left: 38px;
     background-color: $white-grey-color;
+    background-image: linear-gradient(to bottom, $white-color, $white-color 82px, $white-grey-color 82px, $white-grey-color 100%);
+
+    &--small {
+      padding-top: 34px;
+    }
+
+    &--small-chicken {
+      padding-top: 36px;
+    }
   }
 
   .catalog-item__inner-container {
@@ -37,10 +70,60 @@
     margin: 0;
     padding: 0;
   }
+
+  .catalog-item__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 31px;
+    padding-top: 37px;
+    padding-right: 37px;
+    padding-left: 38px;
+  }
+
+  .catalog-item__title {
+    width: 140px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .catalog-item__parameters {
+    padding-top: 19px;
+    font-size: 16px;
+  }
+
+  .catalog-item__parameter-name,
+  .catalog-item__parameter-value {
+    padding-top: 6px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog-item__button {
+    margin-right: 37px;
+    margin-left: 38px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 245px;
+
+    &--small-buckwheat {
+      padding-top: 36px;
+    }
+
+    &--small-rice {
+      padding-top: 36px;
+    }
+  }
+
+  .catalog-item__description {
+    padding-top: 36px;
+
+    &--big-buckwheat {
+      padding-top: 38px;
+    }
   }
 }
