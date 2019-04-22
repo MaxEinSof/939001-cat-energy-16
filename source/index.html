@@ -79,7 +79,7 @@
         <div class="example-result__container">
           <div class="example-result__description">
             <p class="example-result__title">Живой пример</p>
-            <p class="example-result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="example-result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="example-result__achievement">
               <p class="example-result__parameter">
                 <span class="example-result__parameter-value">5 кг</span>
@@ -93,13 +93,20 @@
             <p class="example-result__expenses">Затраты на питание:<span class="example-result__expenses-value"> 15 000 руб.</span></p>
           </div>
           <div class="example-result__comparison-slider">
-            <img class="example-result__cat-image" src="img/cat.png" width="311" height="232" alt="Кот">
+            <div class="example-result__slider-container">
+              <div class="example-result__cat-container example-result__cat-container--before example-result__cat-container--show">
+                <img class="example-result__cat-image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до употребления корма Cat Energy Slim">
+              </div>
+              <div class="example-result__cat-container example-result__cat-container--after">
+                <img class="example-result__cat-image" src="img/after-mobile@1x.png" width="320" height="240" alt="Кот после употребления корма Cat Energy Slim">
+              </div>
+            </div>
             <div class="example-result__slider-controllers">
               <button class="example-result__button-before" type="button">Было</button>
-                <div class="example-result__scale">
-                  <div class="example-result__bar"></div>
-                  <button class="example-result__toggle" type="button">Ползунок сравнения слайдов</button>
-                </div>
+              <div class="example-result__scale">
+                <div class="example-result__bar"></div>
+                <button class="example-result__toggle" type="button"><span class="visually-hidden">Ползунок сравнения слайдов</span></button>
+              </div>
               <button class="example-result__button-after" type="button">Стало</button>
             </div>
           </div>
