@@ -1,22 +1,48 @@
 .special-offer {
+  position: relative;
   display: block;
+  box-sizing: border-box;
   width: 280px;
   height: 289px;
+  padding-top: 187px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $white-color;
   background-color: $green-color;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 113px;
+    width: 55px;
+    height: 60px;
+    background: url("../img/icon-gift.svg") 0 0 no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .special-offer {
     width: 708px;
     height: 200px;
+    padding-top: 72px;
+    padding-right: 120px;
+    padding-bottom: 60px;
+    padding-left: 423px;
+    text-align: left;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      left: 91px;
+    }
   }
 }
 
@@ -24,6 +50,15 @@
   .special-offer {
     width: 245px;
     height: 289px;
+    padding-top: 187px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    text-align: center;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      left: 96px;
+    }
   }
 }

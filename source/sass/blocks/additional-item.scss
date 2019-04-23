@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 17px;
 }
 
 .additional-item__link {
   width: 100%;
+  margin-bottom: 13px;
 }
 
 .additional-item__title {
@@ -29,6 +30,7 @@
 
 .additional-item__button {
   width: 100%;
+  margin-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,11 +44,28 @@
   .additional-item__link {
     width: auto;
     margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .additional-item__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-item__portion-volume,
+  .additional-item__price {
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-item__price {
     width: 95px;
     text-align: right;
+  }
+
+  .additional-item__button {
+    margin-top: 22px;
   }
 }
 
@@ -58,16 +77,23 @@
     padding-left: 0;
   }
 
+  .additional-item__link {
+    padding-top: 10px;
+  }
+
   .additional-item__portion-volume {
     width: 245px;
+    padding-top: 14px;
   }
 
   .additional-item__price {
     width: 80px;
+    padding-top: 14px;
     text-align: left;
   }
 
   .additional-item__button {
     width: 245px;
+    margin-top: 0;
   }
 }
