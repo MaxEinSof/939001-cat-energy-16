@@ -33,7 +33,7 @@
 
     <main class="page-main">
       <div class="page-main__inner-container">
-        <h1 class="page-main__title page-main__title--inner-page">Подбор программы</h1>
+        <h1 class="page-main__title page-main__title--page-form">Подбор программы</h1>
       </div>
 
       <form class="page-main__program-form program-form" action="https://echo.htmlacademy.ru" method="get">
@@ -64,16 +64,16 @@
             <div class="program-form__inner-container">
               <ul class="program-form__goal-list">
                 <li class="program-form__goal-item">
-                  <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-slimming" value="slimming" checked>
-                  <label class="program-form__label" for="goal-slimming">Похудение</label>
+                  <input class="visually-hidden program-form__goal-radio" type="radio" name="goal" id="goal-slimming" value="slimming" checked>
+                  <label class="program-form__label program-form__label--goal-label" for="goal-slimming">Похудение</label>
                 </li>
                 <li class="program-form__goal-item">
-                  <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-weight-gain" value="weight-gain">
-                  <label class="program-form__label" for="goal-weight-gain">Набор массы</label>
+                  <input class="visually-hidden program-form__goal-radio" type="radio" name="goal" id="goal-weight-gain" value="weight-gain">
+                  <label class="program-form__label program-form__label--goal-label" for="goal-weight-gain">Набор массы</label>
                 </li>
                 <li class="program-form__goal-item">
-                  <input class="visually-hidden program-form__input" type="radio" name="goal" id="goal-advice" value="advice">
-                  <label class="program-form__label" for="goal-advice">Не знаю (Нужен ваш совет)</label>
+                  <input class="visually-hidden program-form__goal-radio" type="radio" name="goal" id="goal-advice" value="advice">
+                  <label class="program-form__label program-form__label--goal-label" for="goal-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
@@ -87,11 +87,22 @@
           <div class="program-form__container">
             <p class="program-form__contact-detail">
               <label class="program-form__label" for="email-field">E-mail:*</label>
-              <input class="program-form__input" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+              <input class="program-form__input program-form__input--contact" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+              <svg class="program-form__email-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
+                <path fill="#222222" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+              </svg>
             </p>
             <p class="program-form__contact-detail">
               <label class="program-form__label" for="tel-field">Телефон:*</label>
-              <input class="program-form__input" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
+              <input class="program-form__input program-form__input--contact" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
+              <svg class="program-form__tel-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path fill="#222222" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                <path
+                  fill="#222222" d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                C7.8,20,8.1,19.7,8.1,19.4z"/>
+              </svg>
             </p>
           </div>
         </fieldset>
@@ -102,31 +113,31 @@
           </div>
           <div class="program-form__container">
             <label class="visually-hidden" for="comment-field">Поле ввода о повадках кота</label>
-            <textarea class="program-form__input program-form__input--textarea" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="program-form__input program-form__input--textarea" rows="8" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
         <fieldset class="program-form__additionally">
           <div class="program-form__legend-container">
-            <legend class="program-form__legend">Дополнительно</legend>
+            <legend class="program-form__legend program-form__legend--add">Дополнительно</legend>
           </div>
           <div class="program-form__container">
             <ul class="program-form__additional-list">
               <li class="program-form__additional-item">
-                <input class="visually-hidden program-form__input" type="checkbox" name="sweetener" id="sweetener-field" checked>
-                <label class="program-form__label" for="sweetener-field">Сахарозаменитель</label>
+                <input class="visually-hidden program-form__add-checkbox" type="checkbox" name="sweetener" id="sweetener-field" checked>
+                <label class="program-form__label program-form__label--add-label" for="sweetener-field">Сахарозаменитель</label>
               </li>
               <li class="program-form__additional-item">
-                <input class="visually-hidden program-form__input" type="checkbox" name="water" id="water-field">
-                <label class="program-form__label" for="water-field">Питьевая вода</label>
+                <input class="visually-hidden program-form__add-checkbox" type="checkbox" name="water" id="water-field">
+                <label class="program-form__label program-form__label--add-label" for="water-field">Питьевая вода</label>
               </li>
               <li class="program-form__additional-item">
-                <input class="visually-hidden program-form__input" type="checkbox" name="milk" id="milk-field">
-                <label class="program-form__label" for="milk-field">Молоко</label>
+                <input class="visually-hidden program-form__add-checkbox" type="checkbox" name="milk" id="milk-field">
+                <label class="program-form__label program-form__label--add-label" for="milk-field">Молоко</label>
               </li>
               <li class="program-form__additional-item">
-                <input class="visually-hidden program-form__input" type="checkbox" name="vitamins" id="vitamins-field">
-                <label class="program-form__label" for="vitamins-field">Витамины</label>
+                <input class="visually-hidden program-form__add-checkbox" type="checkbox" name="vitamins" id="vitamins-field">
+                <label class="program-form__label program-form__label--add-label" for="vitamins-field">Витамины</label>
               </li>
             </ul>
           </div>

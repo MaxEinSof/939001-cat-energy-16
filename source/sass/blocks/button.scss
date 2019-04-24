@@ -10,6 +10,8 @@
   text-align: center;
   color: $white-color;
   background-color: $green-color;
+  border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
