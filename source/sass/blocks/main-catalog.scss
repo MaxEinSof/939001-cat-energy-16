@@ -70,6 +70,7 @@
     @include tablet-container;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 8px;
     border: none;
   }
 
@@ -125,6 +126,7 @@
 @media (min-width: $desktop-width) {
   .main-catalog {
     @include desktop-container;
+    margin-bottom: 15px;
   }
 
   .main-catalog__list {
