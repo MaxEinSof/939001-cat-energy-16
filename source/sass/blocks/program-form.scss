@@ -28,6 +28,7 @@
 }
 
 .program-form__info-item {
+  display: flex;
   margin-bottom: 14px;
 
   &:last-child {
@@ -76,10 +77,6 @@
 
 .program-form__additional-list {
   @include list;
-}
-
-.program-form__info-item {
-  display: flex;
 }
 
 .program-form__label {
