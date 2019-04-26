@@ -19,6 +19,11 @@
   opacity: 0.6;
 }
 
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
+}
+
 .page-header__main-nav {
   margin-top: 13px;
 }
@@ -30,7 +35,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
     padding-top: 24px;
     padding-bottom: 0;
     border: none;
@@ -42,6 +47,11 @@
     padding: 0;
   }
 
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+
   .page-header__main-nav {
     margin-top: 0;
   }
@@ -50,12 +60,17 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include desktop-container;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding-top: 54px;
     padding-bottom: 0;
 
     &--inner-page {
-      margin-bottom: 71px;
+      margin-bottom: 72px;
     }
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
