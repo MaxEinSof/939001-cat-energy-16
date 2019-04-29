@@ -6,8 +6,8 @@
   line-height: 16px;
   color: $dark-grey-color;
 
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__logo-icon,
+  &:focus .copyright__logo-icon {
     fill: $green-color;
   }
 
@@ -18,4 +18,8 @@
 
 .copyright__name {
   margin-top: 8px;
+}
+
+.copyright__logo-icon {
+  fill: $grey-color;
 }
