@@ -103,10 +103,18 @@
           <div class="example-result__comparison-slider">
             <div class="example-result__slider-container">
               <div class="example-result__cat-container example-result__cat-container--before example-result__cat-container--show">
-                <img class="example-result__cat-image" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до употребления корма Cat Energy Slim">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="example-result__cat-image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до употребления корма Cat Energy Slim">
+                </picture>
               </div>
               <div class="example-result__cat-container example-result__cat-container--after">
-                <img class="example-result__cat-image" src="img/after-mobile@1x.png" width="320" height="240" alt="Кот после употребления корма Cat Energy Slim">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="example-result__cat-image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после употребления корма Cat Energy Slim">
+                </picture>
               </div>
             </div>
             <div class="example-result__slider-controllers">
@@ -132,7 +140,11 @@
           </div>
         </div>
         <div class="contacts__map-container">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
+          </picture>
         </div>
         <iframe class="contacts__embed-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716035023!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1555959683978!5m2!1sru!2sth" width="320" height="362" allowfullscreen></iframe>
       </section>
