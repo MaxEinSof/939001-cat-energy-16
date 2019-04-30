@@ -33,8 +33,12 @@
   margin-right: 0;
 }
 
-.social-list__link:hover path,
-.social-list__link:focus path {
+.social-list__link-icon {
+  fill: $grey-color;
+}
+
+.social-list__link:hover .social-list__link-icon,
+.social-list__link:focus .social-list__link-icon {
   fill: $green-color;
 }
 
