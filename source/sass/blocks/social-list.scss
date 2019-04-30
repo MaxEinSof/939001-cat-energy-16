@@ -25,7 +25,7 @@
   }
 
   &--facebook {
-    padding-right: 5px;
+    padding-right: 6px;
   }
 }
 
@@ -58,12 +58,31 @@
     width: 30px;
     margin-right: 25px;
 
+    &--vkontakte {
+      padding-top: 6px;
+
+      .social-list__link-icon {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
     &--instagram {
-      padding-top: 0;
+      padding-top: 3px;
+
+      .social-list__link-icon {
+        width: 23px;
+        height: 23px;
+      }
     }
 
     &--facebook {
-      padding-right: 0;
+      padding-right: 15px;
+
+      .social-list__link-icon {
+        width: 14px;
+        height: 28px;
+      }
     }
   }
 }

@@ -150,8 +150,8 @@
   &--contact {
     padding-right: 47px;
 
-    &:focus + .program-form__email-icon path,
-    &:focus + .program-form__tel-icon path {
+    &:focus + .program-form__email-icon,
+    &:focus + .program-form__tel-icon {
       fill: $green-color;
     }
   }
@@ -176,8 +176,8 @@
   &:invalid {
     outline: 2px solid #ff8282;
 
-    & + .program-form__email-icon path,
-    & + .program-form__tel-icon path {
+    & + .program-form__email-icon,
+    & + .program-form__tel-icon {
       fill: #ff8282;
     }
   }
@@ -254,12 +254,14 @@
   position: absolute;
   top: 16px;
   right: 16px;
+  fill: #222222;
 }
 
 .program-form__tel-icon {
   position: absolute;
   top: 13px;
   right: 13px;
+  fill: #222222;
 }
 
 .program-form__additional-item {
