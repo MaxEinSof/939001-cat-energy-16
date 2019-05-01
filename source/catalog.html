@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title>Кэт энерджи: Каталог продукции</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header page-header--inner-page">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
@@ -380,7 +385,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg class="social-list__link-icon" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#sprite-icon-vk-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -388,7 +393,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Инстаграме</span>
                 <svg class="social-list__link-icon" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#sprite-icon-insta-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -396,7 +401,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social-list__link-icon" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#sprite-icon-fb-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -405,7 +410,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__name">HTML Academy</span>
               <svg class="copyright__logo-icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                <use xlink:href="#sprite-icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
