@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title>Кэт энерджи: Подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header page-header--inner-page">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
@@ -93,14 +98,14 @@
               <label class="program-form__label" for="email-field">E-mail:*</label>
               <input class="program-form__input program-form__input--contact" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
               <svg class="program-form__email-icon" width="17" height="13">
-                <use xlink:href="img/sprite.svg#icon-email"></use>
+                <use xlink:href="#sprite-icon-mail"></use>
               </svg>
             </p>
             <p class="program-form__contact-detail">
               <label class="program-form__label" for="tel-field">Телефон:*</label>
               <input class="program-form__input program-form__input--contact" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90">
               <svg class="program-form__tel-icon" width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-tel"></use>
+                <use xlink:href="#sprite-icon-phone"></use>
               </svg>
             </p>
           </div>
@@ -185,7 +190,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Вконтакте</span>
                 <svg class="social-list__link-icon" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#sprite-icon-vk-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -193,7 +198,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Инстаграме</span>
                 <svg class="social-list__link-icon" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#sprite-icon-insta-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -201,7 +206,7 @@
               <a class="social-list__link" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social-list__link-icon" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#sprite-icon-fb-mobile"></use>
                 </svg>
               </a>
             </li>
@@ -210,7 +215,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__name">HTML Academy</span>
               <svg class="copyright__logo-icon" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                <use xlink:href="#sprite-icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
