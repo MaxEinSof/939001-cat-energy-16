@@ -80,7 +80,7 @@
 
   &:hover::after,
   &:focus::after {
-    right: -56px;
+    right: -44px;
     width: 33px;
     background: url("../img/icon-right-arrow-verylong.svg") 0 0 no-repeat;
   }
@@ -155,6 +155,11 @@
     &::after {
       top: 10px;
       right: -47px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      right: -56px;
     }
   }
 }

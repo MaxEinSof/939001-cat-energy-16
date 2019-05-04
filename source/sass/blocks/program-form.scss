@@ -135,6 +135,10 @@
     color: $dark-grey-color;
   }
 
+  &::-moz-placeholder {
+    color: $dark-grey-color;
+  }
+
   &:-ms-input-placeholder {
     color: $dark-grey-color;
   }
@@ -147,13 +151,15 @@
     color: $dark-grey-color;
   }
 
-  &--contact {
-    padding-right: 47px;
+  &:hover {
+    border-color: #cfcfcf;
+  }
 
-    &:focus + .program-form__email-icon,
-    &:focus + .program-form__tel-icon {
-      fill: $green-color;
-    }
+  &:focus {
+    padding-right: 14px;
+    padding-left: 14px;
+    outline: none;
+    border: 2px solid $dark-grey-color;
   }
 
   &--textarea {
@@ -163,23 +169,65 @@
     padding-right: 10px;
     padding-bottom: 13px;
     resize: vertical;
+
+    &:focus {
+      padding-top: 12px;
+      padding-right: 10px;
+    }
   }
 
-  &:hover {
-    border-color: #cfcfcf;
-  }
-
-  &:focus {
-    outline: 2px solid $dark-grey-color;
-  }
-
-  &:invalid {
-    outline: 2px solid #ff8282;
+  &:invalid,
+  &--required {
+    border: 2px solid #ff8282;
 
     & + .program-form__email-icon,
     & + .program-form__tel-icon {
       fill: #ff8282;
     }
+
+    &:hover {
+      border-color: #ff8282;
+    }
+
+    &:focus {
+      padding-right: 15px;
+      padding-left: 15px;
+      border-color: #ff8282;
+    }
+  }
+
+  &--contact {
+    padding-right: 47px;
+
+    &:focus {
+      padding-right: 47px;
+    }
+
+    &:focus + .program-form__email-icon,
+    &:focus + .program-form__tel-icon {
+      fill: $green-color;
+    }
+
+    &:invalid,
+    &.program-form__input--required {
+      &:focus {
+        padding-right: 47px;
+      }
+
+      &:focus + .program-form__email-icon,
+      &:focus + .program-form__tel-icon {
+        fill: #ff8282;
+      }
+    }
+  }
+}
+
+.program-form__input[type="number"] {
+  -moz-appearance: textfield;
+
+  &:hover,
+  &:focus {
+    -moz-appearance: number-input;
   }
 }
 
@@ -220,12 +268,14 @@
   }
 }
 
-.program-form__legend-container {
+.program-form__legend {
   @include mobile-container;
   padding-left: 0;
 }
 
-.program-form__legend {
+.program-form__legend-text {
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 34px;
   padding-left: 20px;
   padding-right: 22px;
@@ -233,10 +283,11 @@
   line-height: 24px;
   color: $black-color;
   background-color: $white-color;
-}
 
-.program-form__legend--contact {
-  width: 224px;
+  &--contact {
+    box-sizing: border-box;
+    width: 224px;
+  }
 }
 
 .program-form__contact-detail {
@@ -351,6 +402,17 @@
     font-size: 20px;
     line-height: 20px;
 
+    &:focus {
+      padding-right: 17px;
+      padding-left: 17px;
+    }
+
+    &:invalid:focus,
+    &--required:focus {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+
     &--contact {
       padding-right: 55px;
     }
@@ -361,6 +423,11 @@
       padding-right: 17px;
       padding-bottom: 14px;
       padding-left: 17px;
+
+      &:focus {
+        padding-top: 13px;
+        padding-left: 16px;
+      }
     }
   }
 
@@ -417,12 +484,12 @@
     padding-right: 67px;
   }
 
-  .program-form__legend-container {
+  .program-form__legend {
     @include tablet-container;
     padding-right: 67px;
   }
 
-  .program-form__legend {
+  .program-form__legend-text {
     margin-bottom: 76px;
     padding-left: 39px;
     padding-right: 40px;
@@ -533,7 +600,7 @@
     justify-content: space-between;
   }
 
-  .program-form__legend-container {
+  .program-form__legend {
     @include desktop-container;
     padding-left: 0;
   }

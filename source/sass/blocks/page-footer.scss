@@ -13,6 +13,7 @@
 }
 
 .page-footer__logo {
+  height: 27px;
   margin-bottom: 28px;
 }
 
@@ -43,11 +44,13 @@
   .page-footer__logo {
     width: 162px;
     margin-top: 4px;
+    margin-right: auto;
     margin-bottom: 0;
   }
 
   .page-footer__copyright {
     width: 162px;
+    margin-left: auto;
   }
 }
 
