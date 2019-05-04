@@ -222,15 +222,6 @@
   }
 }
 
-.program-form__input[type="number"] {
-  -moz-appearance: textfield;
-
-  &:hover,
-  &:focus {
-    -moz-appearance: number-input;
-  }
-}
-
 .program-form__goal-radio:hover + .program-form__label--goal-label::before,
 .program-form__goal-radio:focus + .program-form__label--goal-label::before {
   border-color: #bababa;
