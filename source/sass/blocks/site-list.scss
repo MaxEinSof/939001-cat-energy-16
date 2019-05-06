@@ -41,7 +41,8 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    padding-top: 18px;
+    flex-wrap: wrap;
+    width: 443px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -50,6 +51,7 @@
 
   .site-list__item {
     margin-right: 36px;
+    padding-top: 18px;
     padding-bottom: 7px;
     border-bottom: none;
 
@@ -70,12 +72,13 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    padding-top: 19px;
+    width: 480px;
     font-size: 20px;
   }
 
   .site-list__item {
     margin-right: 34px;
+    padding-top: 19px;
     padding-bottom: 8px;
   }
 

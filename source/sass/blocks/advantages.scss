@@ -129,16 +129,16 @@
     &--changes::after {
       content: "4";
     }
-  }
 
-  .advantages__item:nth-child(odd) {
-    width: 384px;
-    padding-right: 175px;
-  }
+    &:nth-child(odd) {
+      width: 384px;
+      padding-right: 175px;
+    }
 
-  .advantages__item:nth-child(even) {
-    width: 324px;
-    padding-right: 75px;
+    &:nth-child(even) {
+      width: 324px;
+      padding-right: 75px;
+    }
   }
 
   .advantages__description {
@@ -150,21 +150,28 @@
 @media (min-width: $desktop-width) {
   .advantages {
     @include desktop-container;
+    padding-right: 39px;
   }
 
   .advantages__title {
     margin-bottom: 42px;
   }
 
-  .advantages__item:nth-child(odd),
-  .advantages__item:nth-child(even) {
-    width: 245px;
-    margin-right: 80px;
-    margin-bottom: 27px;
-    padding-right: 0;
+  .advantages__item {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      width: 245px;
+      margin-right: 80px;
+      margin-bottom: 27px;
+      padding-right: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
-  .advantages__item:nth-child(4n) {
-    margin-right: 0;
+  .advantages .advantages__item--changes {
+    width: 246px;
   }
 }

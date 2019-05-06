@@ -1,6 +1,7 @@
 .social-list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   margin-bottom: 22px;
@@ -49,6 +50,7 @@
 @media (min-width: $tablet-width) {
   .social-list {
     width: auto;
+    max-width: 360px;
     margin-bottom: 0;
     padding: 0;
     border: none;
@@ -84,5 +86,11 @@
         height: 28px;
       }
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    max-width: 570px;
   }
 }

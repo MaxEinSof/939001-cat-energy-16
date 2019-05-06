@@ -25,13 +25,14 @@
 
 .example-result__achievement {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 19px;
 }
 
 .example-result__parameter {
   width: 124px;
   margin: 0;
+  margin-bottom: 19px;
   text-align: center;
 }
 
@@ -87,11 +88,11 @@
   @include mobile-container;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .example-result__button-before,
 .example-result__button-after {
+  width: 40px;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -103,7 +104,12 @@
 }
 
 .example-result__button-before {
-  margin-left: 5px;
+  text-align: right;
+  direction: rtl;
+}
+
+.example-result__button-after {
+  text-align: left;
 }
 
 .example-result__scale {
@@ -111,6 +117,7 @@
   box-sizing: border-box;
   width: 84px;
   height: 14px;
+  margin-top: 3px;
   margin-right: 17px;
   margin-left: 19px;
   padding: 3px 5px;
@@ -296,7 +303,11 @@
   }
 
   .example-result__button-before {
-    margin-left: 0;
+    width: 46px;
+  }
+
+  .example-result__button-after {
+    width: 50px;
   }
 
   .example-result__scale {
@@ -343,6 +354,21 @@
   .example-result {
     padding-top: 0;
     border: none;
+
+    &::before,
+    &::after {
+      top: 0;
+      height: auto;
+      background-color: transparent;
+    }
+
+    &::before {
+      background-image: linear-gradient(to bottom, transparent, transparent 190px, $white-grey-color 190px, $white-grey-color 100%);
+    }
+
+    &::after {
+      background-image: linear-gradient(to bottom, transparent, transparent 190px, #eaeaea 190px, #eaeaea 100%);
+    }
   }
 
   .example-result__container {
@@ -373,7 +399,7 @@
   }
 
   .example-result__achievement {
-    margin-bottom: 42px;
+    margin-bottom: 23px;
   }
 
   .example-result__parameter-name {
@@ -397,12 +423,21 @@
     width: 690px;
     padding-bottom: 68px;
 
+    &::before,
+    &::after {
+      top: 0;
+      height: auto;
+      background-color: transparent;
+    }
+
     &::before {
       right: 47%;
+      background-image: linear-gradient(to bottom, transparent, transparent 190px, $white-grey-color 190px, $white-grey-color 100%);
     }
 
     &::after {
       left: 53%;
+      background-image: linear-gradient(to bottom, transparent, transparent 190px, #eaeaea 190px, #eaeaea 100%);
     }
   }
 
@@ -425,5 +460,10 @@
     margin: 0;
     padding: 0;
     padding-left: 40px;
+  }
+
+  .example-result__button-before,
+  .example-result__button-after {
+    max-width: 70px;
   }
 }
