@@ -135,6 +135,10 @@
     color: $dark-grey-color;
   }
 
+  &::-moz-placeholder {
+    color: $dark-grey-color;
+  }
+
   &:-ms-input-placeholder {
     color: $dark-grey-color;
   }
@@ -145,15 +149,18 @@
 
   &::placeholder {
     color: $dark-grey-color;
+    opacity: 1;
   }
 
-  &--contact {
-    padding-right: 47px;
+  &:hover {
+    border-color: #cfcfcf;
+  }
 
-    &:focus + .program-form__email-icon,
-    &:focus + .program-form__tel-icon {
-      fill: $green-color;
-    }
+  &:focus {
+    padding-right: 14px;
+    padding-left: 14px;
+    outline: none;
+    border: 2px solid $dark-grey-color;
   }
 
   &--textarea {
@@ -163,44 +170,75 @@
     padding-right: 10px;
     padding-bottom: 13px;
     resize: vertical;
+
+    &:focus {
+      padding-top: 12px;
+      padding-right: 10px;
+    }
   }
 
-  &:hover {
-    border-color: #cfcfcf;
-  }
-
-  &:focus {
-    outline: 2px solid $dark-grey-color;
-  }
-
-  &:invalid {
-    outline: 2px solid #ff8282;
+  &:invalid,
+  &--required {
+    border: 2px solid #ff8282;
 
     & + .program-form__email-icon,
     & + .program-form__tel-icon {
       fill: #ff8282;
     }
+
+    &:hover {
+      border-color: #ff8282;
+    }
+
+    &:focus {
+      padding-right: 15px;
+      padding-left: 15px;
+      border-color: #ff8282;
+    }
+  }
+
+  &--contact {
+    &:focus + .program-form__email-icon,
+    &:focus + .program-form__tel-icon {
+      fill: $green-color;
+    }
+
+    &:invalid,
+    &.program-form__input--required {
+      &:focus + .program-form__email-icon,
+      &:focus + .program-form__tel-icon {
+        fill: #ff8282;
+      }
+    }
+  }
+
+  &--cat-age {
+    max-width: 173px;
   }
 }
 
-.program-form__goal-radio:hover + .program-form__label--goal-label::before,
-.program-form__goal-radio:focus + .program-form__label--goal-label::before {
-  border-color: #bababa;
-}
+.program-form__goal-radio {
+  &:hover + .program-form__label--goal-label::before,
+  &:focus + .program-form__label--goal-label::before {
+    border-color: #bababa;
+  }
 
-.program-form__goal-radio:active + .program-form__label--goal-label {
-  opacity: 0.3;
-}
+  &:active + .program-form__label--goal-label,
+  &:active + .program-form__label--goal-label::before,
+  &:active + .program-form__label--goal-label::after {
+    opacity: 0.3;
+  }
 
-.program-form__goal-radio:checked + .program-form__label--goal-label::after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  width: 12px;
-  height: 12px;
-  background-color: $green-color;
-  border-radius: 50%;
+  &:checked + .program-form__label--goal-label::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    background-color: $green-color;
+    border-radius: 50%;
+  }
 }
 
 .program-form__contact-info,
@@ -220,12 +258,15 @@
   }
 }
 
-.program-form__legend-container {
+.program-form__legend {
   @include mobile-container;
   padding-left: 0;
+  font-weight: 400;
 }
 
-.program-form__legend {
+.program-form__legend-text {
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 34px;
   padding-left: 20px;
   padding-right: 22px;
@@ -233,10 +274,11 @@
   line-height: 24px;
   color: $black-color;
   background-color: $white-color;
-}
 
-.program-form__legend--contact {
-  width: 224px;
+  &--contact {
+    box-sizing: border-box;
+    width: 224px;
+  }
 }
 
 .program-form__contact-detail {
@@ -247,6 +289,16 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 40px;
+    height: 33px;
+    background-color: $white-color;
   }
 }
 
@@ -276,23 +328,27 @@
   }
 }
 
-.program-form__add-checkbox:hover + .program-form__label--add-label::before,
-.program-form__add-checkbox:focus + .program-form__label--add-label::before {
-  border-color: #bababa;
-}
+.program-form__add-checkbox {
+  &:hover + .program-form__label--add-label::before,
+  &:focus + .program-form__label--add-label::before {
+    border-color: #bababa;
+  }
 
-.program-form__add-checkbox:active + .program-form__label--add-label {
-  opacity: 0.3;
-}
+  &:active + .program-form__label--add-label,
+  &:active + .program-form__label--add-label::before,
+  &:active + .program-form__label--add-label::after {
+    opacity: 0.3;
+  }
 
-.program-form__add-checkbox:checked + .program-form__label--add-label::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 5px;
-  width: 21px;
-  height: 16px;
-  background: url("../../img/icon-tick.svg") 0 0 no-repeat;
+  &:checked + .program-form__label--add-label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 21px;
+    height: 16px;
+    background: url("../../img/icon-tick.svg") 0 0 no-repeat;
+  }
 }
 
 .program-form__button {
@@ -351,8 +407,28 @@
     font-size: 20px;
     line-height: 20px;
 
+    &:focus {
+      padding-right: 17px;
+      padding-left: 17px;
+    }
+
+    &:invalid:focus,
+    &--required:focus {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+
     &--contact {
       padding-right: 55px;
+
+      &:focus {
+        padding-right: 55px;
+      }
+
+      &:invalid:focus,
+      &--required:focus {
+        padding-right: 55px;
+      }
     }
 
     &--textarea {
@@ -361,6 +437,15 @@
       padding-right: 17px;
       padding-bottom: 14px;
       padding-left: 17px;
+
+      &:focus {
+        padding-top: 13px;
+        padding-left: 16px;
+      }
+    }
+
+    &--cat-age {
+      max-width: none;
     }
   }
 
@@ -417,12 +502,12 @@
     padding-right: 67px;
   }
 
-  .program-form__legend-container {
+  .program-form__legend {
     @include tablet-container;
     padding-right: 67px;
   }
 
-  .program-form__legend {
+  .program-form__legend-text {
     margin-bottom: 76px;
     padding-left: 39px;
     padding-right: 40px;
@@ -509,7 +594,9 @@
   .program-form__outer-container {
     @include desktop-container;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 69px;
   }
 
@@ -530,21 +617,25 @@
   .program-form__container {
     @include desktop-container;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .program-form__legend-container {
+  .program-form__legend {
     @include desktop-container;
     padding-left: 0;
   }
 
   .program-form__contact-info {
-    margin-bottom: 67px;
+    margin-bottom: 47px;
   }
 
   .program-form__contact-detail {
     width: 570px;
-    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .program-form__email-icon {

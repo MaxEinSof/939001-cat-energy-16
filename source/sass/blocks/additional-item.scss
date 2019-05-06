@@ -22,10 +22,15 @@
 
 .additional-item__portion-volume,
 .additional-item__price {
+  width: 140px;
   margin: 0;
   font-family: $secondary-font;
   line-height: 14px;
   color: $dark-grey-color;
+}
+
+.additional-item__price {
+  text-align: right;
 }
 
 .additional-item__button {
@@ -35,6 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-item {
+    align-items: flex-start;
     padding-top: 25px;
     padding-right: 36px;
     padding-bottom: 27px;
@@ -48,6 +54,7 @@
   }
 
   .additional-item__title {
+    max-width: 346px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -59,9 +66,13 @@
     line-height: 20px;
   }
 
+  .additional-item__portion-volume {
+    width: 192px;
+    text-align: right;
+  }
+
   .additional-item__price {
     width: 95px;
-    text-align: right;
   }
 
   .additional-item__button {
@@ -81,9 +92,14 @@
     padding-top: 10px;
   }
 
+  .additional-item__title {
+    max-width: 285px;
+  }
+
   .additional-item__portion-volume {
     width: 245px;
     padding-top: 14px;
+    text-align: left;
   }
 
   .additional-item__price {

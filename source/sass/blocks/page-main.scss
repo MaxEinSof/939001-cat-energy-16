@@ -114,9 +114,8 @@
 
   .page-main__promo-image {
     position: absolute;
-    left: 50%;
+    left: 29px;
     bottom: 0;
-    transform: translateX(-50%);
     z-index: -1;
   }
 
@@ -143,21 +142,6 @@
 @media (min-width: $desktop-width) {
   .page-main__header {
     margin-bottom: 80px;
-
-    &::before {
-      top: -142px;
-      left: 50%;
-      display: block;
-      width: 50%;
-      height: 696px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-
-      @media (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
   }
 
   .page-main__container {
@@ -172,6 +156,7 @@
   }
 
   .page-main__slogan {
+    width: 450px;
     margin-bottom: 53px;
   }
 
@@ -179,6 +164,10 @@
     top: 0;
     left: 490px;
     transform: translateX(0);
+  }
+
+  .page-main__button {
+    width: 450px;
   }
 
   .page-main__program-form {

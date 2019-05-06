@@ -7,10 +7,10 @@
 
 .catalog-sections__section-preview {
   margin-bottom: 20px;
-}
 
-.catalog-sections__section-preview:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,10 +28,16 @@
   .catalog-sections {
     @include desktop-container;
     justify-content: space-between;
-    margin-bottom: 73px;
+    margin-bottom: 43px;
   }
 
   .catalog-sections__section-preview {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    &--slim {
+      margin-right: auto;
+    }
   }
 }

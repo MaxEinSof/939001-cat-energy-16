@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/oswaldregular.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index-page">
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
@@ -60,7 +62,7 @@
 
       <section class="catalog-sections">
         <h2 class="visually-hidden">Разделы каталога</h2>
-        <section class="catalog-sections__section-preview section-preview section-preview--slim">
+        <section class="catalog-sections__section-preview catalog-sections__section-preview--slim section-preview section-preview--slim">
           <h3 class="section-preview__title">Похудение</h3>
           <p class="section-preview__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="section-preview__link" href="#">Каталог Slim</a>
@@ -167,7 +169,7 @@
             <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8">
           </picture>
         </div>
-        <iframe class="contacts__embed-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716035023!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1555959683978!5m2!1sru!2sth" width="320" height="362" allowfullscreen></iframe>
+        <iframe class="contacts__embed-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716035023!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1555959683978!5m2!1sru!2sth" width="320" height="362" aria-label="Интерактивная карта офиса по адресу улица Большая Конюшенная, 19/8" allowfullscreen></iframe>
       </section>
       <section class="page-footer__links">
         <div class="page-footer__container">
@@ -214,6 +216,7 @@
     </footer>
 
     <script src="js/picturefill.min.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
