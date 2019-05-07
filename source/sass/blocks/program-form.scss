@@ -129,7 +129,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $dark-grey-color;
-  border: 1px solid #e7e7e7;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &::-webkit-input-placeholder {
     color: $dark-grey-color;
@@ -153,7 +153,7 @@
   }
 
   &:hover {
-    border-color: #cfcfcf;
+    border-color: #cdcdcd;
   }
 
   &:focus {
@@ -347,7 +347,7 @@
     left: 5px;
     width: 21px;
     height: 16px;
-    background: url("../../img/icon-tick.svg") 0 0 no-repeat;
+    background: url("../img/icon-tick.svg") 0 0 no-repeat;
   }
 }
 
